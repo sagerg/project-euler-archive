@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<body>
+    <h2>Project Euler: <a href="https://projecteuler.net/problem=1">Problem No. 1</a></h2>
+    <h3>Multiples of 3 and 5 all the way to 1000.</h3>
+    <p>Link: <a href="https://stackoverflow.com/questions/30992649/how-do-i-display-variables-which-are-multiples-of-3-using-js">https://stackoverflow.com/questions/30992649/how-do-i-display-variables-which-are-multiples-of-3-using-js</a></p>
+    <button onclick = "prb1()">Try it</button>
+    <script>
+    function prb1 (){
+        document.write("<h2>congratulations!</h2>");
+        for ( var i = 0; i <= 1000; i++ ) {
+            if ((i % 3 == 0) || (i % 5 == 0)) {
+                document.write(i + "<br />");
+            }
+        }
+    }
+    </script>
+</body>
+</html>

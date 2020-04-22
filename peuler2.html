@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<body>
+    <h2>Project Euler: <a href="https://projecteuler.net/problem=2">Problem No. 2</a></h2>
+    <p>Fibonacci numbers (up to 4 mil): starting with 1, 2</p>
+    <p>link: <a href="https://www.w3schools.com/js/js_arrays.asp">https://www.w3schools.com/js/js_arrays.asp</a></p>
+    <p>link 2: <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">https://www.w3schools.com/jsref/jsref_reduce.asp</a></p>
+    <script>
+        var fibon = [1,2]; // list of fibonnaci nos.
+        var fiboneve = [2]; // list of even fibonnaci nos.
+        for (var i = 0; i < fibon.length; i++){
+            var nxtn = fibon[i] + fibon[i + 1];
+            if (nxtn < 4000000){
+                fibon.push(nxtn);
+            }
+            if ((nxtn < 4000000) && (nxtn % 2 === 0)){
+                fiboneve.push(nxtn);
+            }              
+        }
+        document.write("a. sum of even fibonacci numbers: ", fiboneve.reduce(getSum) + "<br />");
+        document.write("b. even fibonacci numbers: ", fiboneve + "<br />");
+        document.write("c. fibonacci numbers: ", fibon);
+        // shortcut for summation:
+        function getSum(total, n){
+            return total + n;
+        }
+    </script>
+</body>
+</html>
