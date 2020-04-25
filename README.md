@@ -1,3 +1,3 @@
-# project-euler-drafts
+# project-euler-archived -problems
 Collection of my attempts at Project Euler
-> Update: I've done 1 through 7.
+> Updated for: 1 to 7.
