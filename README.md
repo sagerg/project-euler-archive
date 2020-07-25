@@ -1,4 +1,4 @@
-# project-euler-archived -problems
+# project-euler-archive
 Collection of Project Euler problems and their respective solutions and implementations.
 If interested: https://projecteuler.net/archives
 
